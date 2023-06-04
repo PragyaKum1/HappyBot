@@ -30,7 +30,7 @@ for filename in os.listdir("./cogs"):
   if filename.endswith("cog.py"):
     client.load_extension(f"cogs.{filename[:-3]}")
 
-client.run("MTExMDA1OTg4ODk1ODI0Njk5Mw.G3Ffqf.s12Yt_bXcFI7o6hNNzbQE9KdLp19TZQdYc2y00")
+client.run("TOKEN")
 
 
 
