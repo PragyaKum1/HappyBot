@@ -1,5 +1,10 @@
 import discord
 import os
+import dotenv
+dotenv.load_dotenv()
+
+token = str(os.getenv("TOKEN"))
+
 
 from discord.ext import commands
 
@@ -32,7 +37,7 @@ for filename in os.listdir("./cogs"):
   if filename.endswith("cog.py"):
     client.load_extension(f"cogs.{filename[:-3]}")
 
-client.run("MTExMDA1OTg4ODk1ODI0Njk5Mw.GXzdKJ.CDt75Hd_jskDrkQgzs44M1TK1g2OR1Q2YV9RgU")
+client.run(os.getenv('TOKEN'))
 
 
 
