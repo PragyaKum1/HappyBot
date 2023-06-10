@@ -22,15 +22,17 @@ async def on_message(message):
     await message.delete()
 
   if message.content == "<@1110059888958246993>":
-    await message.channel.send("My prefixes are `!`")
+    await message.channel.send("Yo! My prefixes are `!`")
 
   await client.process_commands(message)
+
+
 
 for filename in os.listdir("./cogs"):
   if filename.endswith("cog.py"):
     client.load_extension(f"cogs.{filename[:-3]}")
 
-client.run("TOKEN")
+client.run("MTExMDA1OTg4ODk1ODI0Njk5Mw.GXzdKJ.CDt75Hd_jskDrkQgzs44M1TK1g2OR1Q2YV9RgU")
 
 
 
